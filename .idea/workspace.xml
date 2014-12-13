@@ -2,24 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4fa7cc8-2e23-42af-a75e-eee0dc637d05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Capfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/deploy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.capistrano/metrics" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/deploy/production.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\app\assets\javascripts\words.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\app\views\words\_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\app\views\words\edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\app\views\words\new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\lib\assets\.keep" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\lib\tasks\.keep" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\vendor\assets\javascripts\.keep" afterPath="" />
-      <change type="DELETED" beforePath="C:\My-progs\Ruby\sonara\vendor\assets\stylesheets\.keep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/words/index.html.erb" afterPath="$PROJECT_DIR$/app/views/words/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/word.rb" afterPath="$PROJECT_DIR$/app/models/word.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/words.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/words.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sonara.iws" />
@@ -721,11 +703,17 @@
       <option name="project" value="LOCAL" />
       <updated>1418467250115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixes">
+      <created>1418472108695</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1418472108695</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -766,7 +754,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
