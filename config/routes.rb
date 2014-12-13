@@ -1,7 +1,6 @@
 Sonara::Application.routes.draw do
   resources :words
 
-
   root 'words#index'
 
   # Example of regular route:
