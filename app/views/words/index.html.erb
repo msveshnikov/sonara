@@ -15,15 +15,17 @@
   <% @words.each do |word| %>
       <tr>
         <td>><%= link_to word.name, word %></td>
-        <td><%= word.millera %></td>
-        <td><%= word.vangi %></td>
-        <td><%= word.freyda %></td>
+        <!--<td><%= word.millera %></td>-->
+        <!--<td><%= word.vangi %></td>-->
+        <!--<td><%= word.freyda %></td>-->
       </tr>
   <% end %>
   </tbody>
 </table>
 
 <%= will_paginate %>
+
+<%= link_to 'Home', root_path %>
 
 <br>
 

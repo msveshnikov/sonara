@@ -1,7 +1,10 @@
 Sonara::Application.routes.draw do
-  resources :words
+  root 'home#index'
 
-  root 'words#index'
+  resources :words
+  #match "words(/:letter)" => "words#index", :as => words_pagination
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
