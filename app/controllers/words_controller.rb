@@ -3,7 +3,8 @@ class WordsController < ApplicationController
 
   # GET /words
   def index
-    @words = Word.all.limit(50)
+    @words = Word.paginate(page: params[:page], per_page: 50)
+
   end
 
   # GET /words/1
