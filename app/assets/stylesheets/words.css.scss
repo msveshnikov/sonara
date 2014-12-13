@@ -1,10 +1,5 @@
-// Place all the styles related to the Words controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 @import "bootstrap";
 
-/* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
 
@@ -62,8 +57,9 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  font-size: 1.0em;
+  line-height: 1.0em;
+  margin-bottom: 30px;
 }
 
 /* header */
@@ -110,15 +106,6 @@ footer {
   }
 }
 
-/* miscellaneous */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
-}
 
 /* sidebar */
 
@@ -223,10 +210,6 @@ aside {
       padding-left: 0;
       border: 0;
     }
-    //    &:hover {
-    //      text-decoration: none;
-    //      color: $blue;
-    //    }
   }
   strong {
     display: block;

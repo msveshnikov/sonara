@@ -1,26 +1,28 @@
-<h1>Listing words</h1>
+<h1>Сонник </h1>
 <%= will_paginate %>
 
 <table>
   <thead>
   <tr>
-    <th>Name</th>
-    <th>Miller</th>
-    <th>Vanga</th>
+    <th>Слово</th>
+    <th>Миллер</th>
+    <th>Ванга</th>
+    <th>Фрейд</th>
   </tr>
   </thead>
 
   <tbody>
   <% @words.each do |word| %>
       <tr>
-        <td><%= word.name %></td>
+        <td>><%= link_to word.name, word %></td>
         <td><%= word.millera %></td>
         <td><%= word.vangi %></td>
-        <td><%= link_to 'Show', word %></td>
+        <td><%= word.freyda %></td>
       </tr>
   <% end %>
   </tbody>
 </table>
+
 <%= will_paginate %>
 
 <br>
