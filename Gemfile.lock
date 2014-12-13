@@ -129,7 +129,6 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.0)
   capistrano-passenger
   capistrano-rails
-  coffee-rails (~> 4.0.0)
   jquery-rails
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
