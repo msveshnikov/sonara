@@ -16,7 +16,8 @@ class WordsController < ApplicationController
 
   # GET /words/1
   def show
-    @word=Word.find(params[:id])
+    @word = Word.find(params[:id])
+    @comments = @word.comments
   end
 
   def page(a)

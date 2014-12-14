@@ -7,9 +7,8 @@ Sonara::Application.routes.draw do
 
   root 'home#index'
 
-  resources :words do
-    resources :comments, only: [:create, :destroy]
-  end
+  resources :words
+  resources :comments, only: [:create, :destroy]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

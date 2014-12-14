@@ -1,0 +1,11 @@
+<li>
+  <span class="content"><%= comment.content %></span>
+  <span class="timestamp">
+        Отправлено <%= time_ago_in_words(comment.created_at) %> назад.
+  </span>
+  <% if current_user == comment.user %>
+      <%= link_to "delete", comment, method: :delete,
+                  data: {confirm: "Вы уверены?"},
+                  title: "Удалить комментарий" %>
+  <% end %>
+</li>
