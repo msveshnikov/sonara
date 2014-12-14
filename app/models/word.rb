@@ -1,5 +1,5 @@
 class Word < ActiveRecord::Base
-
+  has_many :comments
   default_scope -> { order('name') }
 
   scope :by_letter,

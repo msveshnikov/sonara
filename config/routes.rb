@@ -1,4 +1,5 @@
 Sonara::Application.routes.draw do
+
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
@@ -6,7 +7,9 @@ Sonara::Application.routes.draw do
 
   root 'home#index'
 
-  resources :words
+  resources :words do
+    resources :comments, only: [:create, :destroy]
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

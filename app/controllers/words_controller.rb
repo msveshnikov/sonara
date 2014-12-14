@@ -7,9 +7,7 @@ class WordsController < ApplicationController
     else
       if params[:search]
         @words = page(Word.search(params[:search]))
-        if @words.size==1
-          redirect_to word_path(@words[0])
-        end
+        redirect_to word_path(@words[0]) if @words.size==1
       else
         @words = page(Word)
       end
