@@ -1,33 +1,21 @@
-<h1>СОННИК </h1>
-
+<br>
 <%= will_paginate %>
 
 <table>
-  <thead>
-  <tr>
-    <th>Слово</th>
-    <!--<th>Миллер</th>-->
-    <!--<th>Ванга</th>-->
-    <!--<th>Фрейд</th>-->
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @words.each do |word| %>
-      <tr>
-        <td>><%= link_to word.name, word %></td>
-        <!--<td><%= word.millera %></td>-->
-        <!--<td><%= word.vangi %></td>-->
-        <!--<td><%= word.freyda %></td>-->
-      </tr>
-  <% end %>
-  </tbody>
+  <% if @words.size==0 %>
+      Не найдено
+  <% else
+       @words.each do |word| %>
+          <tr>
+            <td> <%= link_to word.name, word %></td>
+          </tr>
+      <% end end %>
 </table>
 
 <%= will_paginate %>
-
+<br>
+<br>
 <%= link_to 'Главная', root_path %>
 
-<br>
 
 
