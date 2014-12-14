@@ -6,7 +6,8 @@ gem 'will_paginate'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'russian', '~> 0.6.0'
 gem 'bootstrap-will_paginate'
-
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

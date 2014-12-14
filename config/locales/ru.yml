@@ -255,3 +255,7 @@ ru:
       short: ! '%d %b, %H:%M'
     pm: вечера
 
+  will_paginate:
+    previous_label: "Пред"
+    next_label: "След"
+
