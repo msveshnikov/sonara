@@ -16,24 +16,12 @@
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
   </script>
-  <style>
-      html {
-          background: url(assets/bg.png) no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-      }
-  </style>
 </head>
 <body>
 
 <%= link_to image_tag("topbar.jpg"), root_path %>
 
-<div>
-  <aside class="span8">
-    <section>
-      <div>
+<aside class="span7">
         <br><br>
         <% if current_user %>
             <img src="<%= current_user.image %>" height="42" width="42">
@@ -47,15 +35,11 @@
             Более 10000 толкований снов от Фрейда, Ванги, Миллера и многих других!
             <br>
         <% end %>
-      </div>
       <br>
       <% flash.each do |key, value| %>
           <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
-      <div>
         <%= yield %>
-      </div>
-    </section>
   </aside>
   <div class="span3">
     <br> <br><br> <br>
@@ -69,7 +53,6 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
-</div>
 
 <%= image_tag("footer.jpg") %>
 

@@ -1,9 +1,5 @@
 @import "bootstrap";
 
-html {
-  overflow-y: scroll;
-}
-
 body {
   padding: 0px;
   font-family: 'Roboto Slab', serif;
@@ -12,15 +8,10 @@ body {
   max-width: 885px;
   margin: 0 auto !important;
   float: none !important;
+  background-color: #0F2C7C;
+  color: #b396ff;
 }
 
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
 
 .center {
   text-align: center;
@@ -57,23 +48,8 @@ p {
   margin-bottom: 30px;
 }
 
-/* header */
+body {
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.gravatar {
-  float: left;
-  margin-right: 10px;
 }
 
 .timestamp {
