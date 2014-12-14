@@ -24,7 +24,7 @@
    @comment = @word.comments.build %>
 
 <section>
-  <%= render 'shared/comment_form' %>
+  <%= render 'shared/comment_form' if current_user %>
 </section>
 
 

@@ -1,3 +1,4 @@
+# encoding: utf-8
 class CommentsController < ApplicationController
   #before_action :signed_in_user
   before_action :correct_user, only: :destroy
@@ -5,15 +6,17 @@ class CommentsController < ApplicationController
   def create
     @comment = current_user.comments.build(comment_params)
     if @comment.save
-      flash[:success] = "Comment created!"
-      redirect_to root_url #TODO
+      flash[:success] = "Комментарий создан!"
+    else
+      flash[:error] = "Ошибка при создании комментария!"
     end
+    redirect_to word_path(comment_params[:word_id])
   end
 
   def destroy
     @comment.destroy
-    flash[:success] = "Comment deleted!"
-    redirect_to word_url #TODO
+    flash[:success] = "Комментарий удален!"
+    redirect_to word_path(params[:word_id])
   end
 
   private
