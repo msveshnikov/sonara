@@ -22,7 +22,7 @@ class WordsController < ApplicationController
   end
 
   def page(a)
-    a.paginate(page: params[:page], per_page: 30)
+    a.paginate(page: params[:page], per_page: 45)
   end
 
 end

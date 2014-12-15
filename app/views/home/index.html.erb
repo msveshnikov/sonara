@@ -8,9 +8,19 @@
            of using a Rails form helper -->
       <button class="btn" type="submit"><i class="icon-search"></i></button>
     </div>
-
-    <br>
-    <% (("а".."я").to_a-("ъ".."ь").to_a).each do |letter| %>
-        <%= link_to(letter.mb_chars.upcase, words_path(letter: letter), class: "letter") %>
-    <% end %>
+<% end %>
+<br>
+<% (("а".."я").to_a-("ъ".."ь").to_a).each do |letter| %>
+    <%= link_to(letter.mb_chars.upcase, words_path(letter: letter), class: "letter") %>
+<% end %>
+<% if current_user %>
+    <h1> История снов </h1>
+    <% @dreams.each do |date| %>
+        <h3>    <%= date[0] %> </h3>
+        <% date[1].uniq_by(&:word_id).sort_by { |dream| dream.word.name }.each do |dream| %>
+            <div>
+              <%= link_to dream.word.name, dream.word, class: "words" %>
+            </div>
+        <% end
+           end %>
 <% end %>
