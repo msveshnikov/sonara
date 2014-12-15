@@ -1,19 +1,20 @@
 <h1><%= @word.name %></h1>
 
-<p><%= @word.millera %></p>
-<p><%= @word.vangi %></p>
-<p><%= @word.freyda %></p>
-<p><%= @word.nost %></p>
-<p><%= @word.loffa %></p>
-<p><%= @word.tsvetkova %></p>
-<p><%= @word.hasse %></p>
-<p><%= @word.ezoteric %></p>
-<p><%= @word.menegetti %></p>
-<p><%= @word.longo %></p>
-<p><%= @word.angl %></p>
-<p><%= @word.franz %></p>
-<p><%= @word.assiriysky %></p>
-<p><%= @word.sovr %></p>
+<%= display_header("Сонник Миллера", @word.millera) %>
+<%= display_header("Сонник Ванги", @word.vangi) %>
+<%= display_header("Сонник Фрейда", @word.freyda) %>
+<%= display_header("Сонник Нострадамуса", @word.nost) %>
+<%= display_header("Сонник Лоффа", @word.loffa) %>
+<%= display_header("Сонник Цветкова", @word.tsvetkova) %>
+<%= display_header("Сонник Хассе", @word.hasse) %>
+<%= display_header("Эзотерический сонник", @word.ezoteric) %>
+<%= display_header("Сонник Менегетти", @word.menegetti) %>
+<%= display_header("Сонник Лонго", @word.longo) %>
+<%= display_header("Английский сонник", @word.angl) %>
+<%= display_header("Французский сонник", @word.franz) %>
+<%= display_header("Ассирийский сонник", @word.assiriysky) %>
+<%= display_header("Современный сонник", @word.sovr) %>
+
 
 <% if @comments.count > 0 %>
     <h3>Комментариев (<%= @comments.count %>)</h3>
