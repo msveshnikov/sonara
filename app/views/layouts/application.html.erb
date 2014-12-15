@@ -3,15 +3,22 @@
 <head>
   <title>Sonara <%= current_user.name if current_user %></title>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto Slab">
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 
   <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+                  m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
       ga('create', 'UA-33888137-1', 'auto');
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
@@ -22,37 +29,38 @@
 <%= link_to image_tag("topbar.jpg"), root_path %>
 
 <aside class="span7">
-        <br><br>
-        <% if current_user %>
-            <img src="<%= current_user.image %>" height="42" width="42">
-            Welcome, <%= current_user.name %>!
-            <%= link_to "Sign out", signout_path, id: "sign_out" %>
-        <% else %>
-            Войдите чтобы хранить историю снов и делиться комментариями <br>
-            <%= link_to image_tag("signin.png", width: 150), "/auth/google_oauth2", id: "sign_in" %>
-            <%= link_to image_tag("facebook.png", width: 150), "/auth/facebook", id: "sign_in" %>
-            <br><br><b>Sonara.tk</b> это лучший сонник в рунете!
-            Более 10000 толкований снов от Фрейда, Ванги, Миллера и многих других!
-            <br>
-        <% end %>
+  <br><br>
+  <% if current_user %>
+      <img src="<%= current_user.image %>" height="42" width="42">
+      Welcome, <%= current_user.name %>!
+      <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+      Войдите чтобы хранить историю снов и делиться комментариями <br>
+      <%= link_to image_tag("signin.png", width: 150), "/auth/google_oauth2", id: "sign_in" %>
+      <%= link_to image_tag("facebook.png", width: 150), "/auth/facebook", id: "sign_in" %>
+      <%= link_to link_to image_tag("vkontakte.png", width: 150), "/auth/vkontakte", id: "sign_in" %>
+      <br><br><b>Sonara.tk</b> это лучший сонник в рунете!
+      Более 10000 толкований снов от Фрейда, Ванги, Миллера и многих других!
       <br>
-      <% flash.each do |key, value| %>
-          <div class="alert alert-<%= key %>"><%= value %></div>
-      <% end %>
-        <%= yield %>
-  </aside>
-  <div class="span3">
-    <br> <br><br> <br>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- my -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:300px;height:600px"
-         data-ad-client="ca-pub-1351673544337847"
-         data-ad-slot="2591225138"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <% end %>
+  <br>
+  <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+  <%= yield %>
+</aside>
+<div class="span3">
+  <br> <br><br> <br>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- my -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:300px;height:600px"
+       data-ad-client="ca-pub-1351673544337847"
+       data-ad-slot="2591225138"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
 <%= image_tag("footer.jpg") %>
 

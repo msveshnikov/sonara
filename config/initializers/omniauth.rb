@@ -8,4 +8,13 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :facebook, '196393753869092', 'b0d6cb5b3910cbf7b744964773a96651',
            {client_options: {ssl: {ca_file: Rails.root.join("cacert.pem").to_s}}}
 
+  provider :vkontakte, '4682156', 'FW9goGnirqV2CfLExd0B',
+           {
+               scope: 'friends,email',
+               display: 'popup',
+               lang: 'ru',
+               image_size: 'original',
+               client_options: {ssl: {ca_file: Rails.root.join("cacert.pem").to_s}}
+           }
+
 end

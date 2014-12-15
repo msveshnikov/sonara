@@ -8,6 +8,7 @@ gem 'russian', '~> 0.6.0'
 gem 'bootstrap-will_paginate'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
