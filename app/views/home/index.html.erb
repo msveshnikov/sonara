@@ -10,7 +10,7 @@
     </div>
 
     <br>
-    <% ("а".."я").to_a.each do |letter| %>
-        <%= link_to(letter.mb_chars.upcase, words_path(letter: letter)) %>
+    <% (("а".."я").to_a-("ъ".."ь").to_a).each do |letter| %>
+        <%= link_to(letter.mb_chars.upcase, words_path(letter: letter), class: "letter") %>
     <% end %>
 <% end %>

@@ -1,17 +1,15 @@
 <br>
 <%= will_paginate %>
-
-<table>
+<div class="words" style="width: 600px">
   <% if @words.size==0 %>
       Не найдено
   <% else
        @words.each do |word| %>
-          <tr>
-            <td> <%= link_to word.name, word %></td>
-          </tr>
+          <div>
+            <%= link_to word.name, word, class: "words" %>
+          </div>
       <% end end %>
-</table>
-
+</div>
 <%= will_paginate %>
 <br>
 <br>
