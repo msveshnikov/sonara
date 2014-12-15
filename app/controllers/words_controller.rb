@@ -18,6 +18,7 @@ class WordsController < ApplicationController
   def show
     @word = Word.find(params[:id])
     @comments = @word.comments
+    current_user.dreams.build(word_id: params[:id]).save if current_user
   end
 
   def page(a)
