@@ -7,8 +7,4 @@ class Comment < ActiveRecord::Base
   validates :user_id, presence: true
   validates :word_id, presence: true
   validates :content, presence: true, length: {maximum: 500}
-
-  def self.from_word(word)
-    where("word_id = ?", word)
-  end
 end

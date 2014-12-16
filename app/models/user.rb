@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
       user.image = auth.info.image
       user.email = auth.info.email
       user.oauth_token = auth.credentials.token
+      # noinspection RubyResolve
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
       user.save!
     end

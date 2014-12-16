@@ -1,6 +1,5 @@
 # encoding: utf-8
 class CommentsController < ApplicationController
-  #before_action :signed_in_user
   before_action :correct_user, only: :destroy
 
   def create

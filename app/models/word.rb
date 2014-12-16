@@ -4,8 +4,8 @@ class Word < ActiveRecord::Base
 
   scope :by_letter,
         lambda { |letter| {
-            :conditions => ["words.name LIKE ?", "#{letter}%"]
-        }}
+            :conditions => ["name LIKE ?", "#{letter}%"]
+        } }
 
   # It returns the articles whose titles contain one or more words that form the query
   def self.search(query)

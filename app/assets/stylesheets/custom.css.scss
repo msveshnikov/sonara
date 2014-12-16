@@ -1,10 +1,10 @@
 @import "bootstrap";
 
 body {
-  padding: 0px;
-  font-family: 'Verdana', Sans-Serif;
+  padding: 0;
+  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
   //  font-family: 'Roboto Slab', serif;
-  font-size: 15px;
+  font-size: 14px;
   //  font-weight: bolder;
   max-width: 885px;
   margin: 0 auto !important;
@@ -59,21 +59,27 @@ p {
   color: #ffc616;
   padding-top: 9px;
   font-weight: bold;
-  font-family: 'Verdana', Sans-Serif;
+  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d200d2;
+}
+
+a {
+  color: #999dff;
 }
 
 .letter {
   margin: 10px;
   font-size: 1.7em;
   line-height: 3;
-  color: rgb(17, 17, 71);
-  background-color: #dcb762;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  color: #fef5fb;
+  background-color: #2e44d1;
+  padding: 5px 10px;
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Bitstream Vera Sans Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .words {
@@ -87,8 +93,7 @@ p {
 }
 
 .comment {
-  //  font-size: 0.7em;
-  font-family: 'Verdana', Sans-Serif;
+  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* forms */
@@ -99,7 +104,4 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
 }
 
-input {
-  height: auto !important;
-}
 

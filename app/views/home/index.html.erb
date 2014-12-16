@@ -6,7 +6,7 @@
 <% if current_user %>
     <h1> История снов </h1>
     <% @dreams.each do |date| %>
-        <h2>    <%= date[0] %> </h2>
+        <h2> <%= date[0] %> </h2>
         <% date[1].uniq_by(&:word_id).sort_by { |dream| dream.word.name }.each do |dream| %>
             <div>
               <%= link_to dream.word.name, dream.word, class: "words" %>

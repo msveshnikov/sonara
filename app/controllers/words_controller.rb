@@ -1,6 +1,6 @@
 class WordsController < ApplicationController
 
-  # GET /words
+  # GET /words?letter ?search
   def index
     if params[:letter]
       @words = page(Word.by_letter(params[:letter]).order('name'))

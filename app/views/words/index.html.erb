@@ -1,5 +1,4 @@
 <%= render 'shared/search' %>
-<%= will_paginate %>
 <div class="words" style="width: 600px">
   <% if @words.size==0 %>
       Не найдено
@@ -8,7 +7,8 @@
           <div>
             <%= link_to word.name, word, class: "words" %>
           </div>
-      <% end end %>
+      <% end
+         end %>
 </div>
 <%= will_paginate %>
 <br>
