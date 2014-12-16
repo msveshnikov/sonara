@@ -3,7 +3,7 @@
   <br><br>
   <span class="timestamp">
   <img src="<%= comment.user.image %>" height="42" width="42">
-    <%= comment.user.name %> отправил <%= time_ago_in_words(comment.created_at) %> назад.
+    <%= comment.user.name %> отправил(а) <%= time_ago_in_words(comment.created_at) %> назад.
     <% if current_user == comment.user %>
       <%= link_to "delete", comment_path(comment, word_id: comment.word_id), method: :delete,
                   data: {confirm: "Вы уверены?"},
