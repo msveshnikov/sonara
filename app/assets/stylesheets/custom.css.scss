@@ -47,7 +47,8 @@ h3 {
 
 p {
   font-size: 1.0em;
-  line-height: 1.3em;
+  text-align: justify;
+  line-height: 1.5em;
   margin-bottom: 30px;
 }
 
@@ -65,13 +66,13 @@ p {
   font-size: 1.7em;
   line-height: 3;
   color: rgb(17, 17, 71);
-  background-color: #A97E4E;
+  background-color: #dcb762;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   font-weight: bold;
-  font-family: 'Bitstream Vera Sans Mono', Monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .words {
