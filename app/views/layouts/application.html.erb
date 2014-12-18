@@ -28,13 +28,9 @@
 
 <%= link_to image_tag("topbar.jpg"), root_path %>
 
-<%= link_to "О нас", home_about_path %> &nbsp&nbsp&nbsp&nbsp
-<%= link_to "Авторы сонников", home_authors_path %>&nbsp&nbsp&nbsp&nbsp
-<%= link_to "Боги сна", home_gods_path %>
+
 
 <aside class="span7">
-  <br>
-  <br>
 
   <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"><%= value %></div>
@@ -53,7 +49,12 @@
   <% end %>
 </aside>
 <div class="span3">
-  <br> <br> <br> <br>
+  <%= link_to "О нас", home_about_path %>
+  <br>
+  <%= link_to "Боги сна", home_gods_path %>
+  <br>
+  <%= link_to "Авторы сонников", home_authors_path %>
+  <br> <br>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- my -->
   <ins class="adsbygoogle"
