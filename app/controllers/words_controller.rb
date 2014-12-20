@@ -1,4 +1,5 @@
 class WordsController < ApplicationController
+  before_filter :check_for_mobile
 
   # GET /words?letter ?search
   def index
