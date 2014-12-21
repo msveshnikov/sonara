@@ -2,7 +2,7 @@
 <%= form_tag(words_path, :method => "get", id: "search-form") do %>
     <div>
       <br>
-      <%= text_field_tag :search, params[:search], width: 300, placeholder: "Что приснилось" %>
-      <button type="submit">Искать</button>
+      <%= text_field_tag :search, params[:search], placeholder: "Что приснилось" %>
+      <button type="submit" >Искать</button>
     </div>
 <% end %>

@@ -23,7 +23,7 @@ class WordsController < ApplicationController
   end
 
   def page(a)
+    return a if mobile_device?
     a.paginate(page: params[:page], per_page: 45)
   end
-
 end

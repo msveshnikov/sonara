@@ -10,7 +10,7 @@
       <% end
          end %>
 </div>
-<%= will_paginate %>
+<%= will_paginate if !mobile_device? %>
 <br>
 <br>
 <%= link_to 'Главная', root_path %>

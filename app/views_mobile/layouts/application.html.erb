@@ -3,9 +3,12 @@
 <head>
   <title>Sonara <%= current_user.name if current_user %></title>
   <!--<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>-->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cuprum">
   <%= stylesheet_link_tag "mobile" %>
-  <meta name="viewport" content="width=768; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-  <%= javascript_include_tag "application" %>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <!--<%= javascript_include_tag "application" %>-->
   <%= csrf_meta_tags %>
 
   <script>
@@ -27,8 +30,6 @@
 </head>
 <body>
 
-<%= link_to image_tag("topsmall.jpg"), root_path %>
-<br><br>
 <%= yield %>
 <br>
 <% if current_user %>
@@ -51,7 +52,7 @@
   <%= link_to "Форум", "http://extender.tk", target: "_blank" %>
 </div>
 
-<%= link_to "Полная версия", root_path(mobile: 0) %>
+<%= link_to "Полная версия", mobile: 0 %>
 
 </body>
 </html>

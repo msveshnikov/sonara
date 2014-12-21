@@ -1,11 +1,11 @@
 
 body {
-  padding: 0;
-  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  max-width: 768px;
-  margin: 0 auto !important;
-  float: none !important;
+  padding: 5px;
+  font-family: 'Cuprum', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+//  max-width: 768px;
+  margin: 10px;
+//  float: none !important;
   background-color: #0F2C7C;
   color: #e8dbec;
 }
@@ -57,7 +57,7 @@ p {
   color: #ffc616;
   padding-top: 9px;
   font-weight: bold;
-  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
+//  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* mouse over link */
@@ -66,15 +66,8 @@ a:hover {
 }
 
 a {
+  line-height: 1.5em;
   color: #999dff;
-}
-
-.button {
-  //  background-color: #2e44d1;
-  color: #fbf9ff;
-  padding: 5px 10px;
-  line-height: 2;
-  margin: 10px;
 }
 
 .letter {
@@ -89,19 +82,18 @@ a {
 }
 
 .words {
-  color: rgb(219, 225, 227);
+  color: white;
 }
 
-.comment {
-  font-family: 'Verdana', Verdana, Arial, Helvetica, sans-serif;
-}
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
+input, textarea, button, select {
+  width: 40%;
+  font-family: 'Cuprum', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  height: 40px;
+  margin: 5px;
 }
 
 
