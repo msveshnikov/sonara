@@ -30,10 +30,7 @@
 
 <%= link_to image_tag("topbar.jpg"), root_path %>
 
-
-
 <aside class="span7">
-
   <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"><%= value %></div>
   <% end %>

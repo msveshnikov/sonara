@@ -7,7 +7,7 @@
     <% if current_user == comment.user %>
       <%= link_to "delete", comment_path(comment, word_id: comment.word_id), method: :delete,
                   data: {confirm: "Вы уверены?"},
-                  title: "Удалить комментарий" %>
+                  title: "Удалить комментарий" if !mobile_device? %>
   <% end %>
   </span>
   <br> <br> <br>
