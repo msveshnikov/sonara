@@ -47,6 +47,7 @@
     <%= link_to image_tag("facebook.png", width: 150), "/auth/facebook", id: "sign_in" %>
 
 <% end %>
+<% if !android_device? %>
 <div>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- my2 -->
@@ -58,6 +59,7 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 </div>
+<% end %>
 <div>
   <%= link_to "О нас", home_about_path %>
   <br>
@@ -65,10 +67,10 @@
   <br>
   <%= link_to "Авторы сонников", home_authors_path %>
   <br>
-  <%= link_to "Форум", "http://extender.tk", target: "_blank" %>
+  <%= link_to "Форум", "http://extender.tk", target: "_blank" unless android_device? %>
 </div>
 
-<%= link_to "Полная версия", mobile: 0 %>
+<%= link_to "Полная версия", mobile: 0 unless android_device? %>
 <br>
 <%= image_tag("footsmall.jpg") %>
 </body>
