@@ -8,6 +8,7 @@ Sonara::Application.routes.draw do
 
   resources :words
   resources :comments, only: [:create, :destroy]
+  resources :users, only: :index
 
   get 'home/about'
   get 'home/authors'
