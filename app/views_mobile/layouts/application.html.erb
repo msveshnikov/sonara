@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
   <meta name="MobileOptimized" content="320"/>
   <meta name="HandheldFriendly" content="true"/>
-  <!--<%= javascript_include_tag "application" %>-->
   <%= csrf_meta_tags %>
 
   <script>
@@ -48,17 +47,17 @@
 
 <% end %>
 <% if !android_device? %>
-<div>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- my2 -->
-  <ins class="adsbygoogle"
-       style="display:inline-block;width:320px;height:100px"
-       data-ad-client="ca-pub-1351673544337847"
-       data-ad-slot="3301281933"></ins>
-  <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+    <div>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- my2 -->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:320px;height:100px"
+           data-ad-client="ca-pub-1351673544337847"
+           data-ad-slot="3301281933"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
 <% end %>
 <div>
   <%= link_to "О нас", home_about_path %>
