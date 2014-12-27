@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :admin_user
+  before_action :admin_user, :check_for_mobile
 
   # GET /users
   def index
