@@ -26,6 +26,12 @@ production:
   username: root
   password: j262
 
+staging:
+  adapter: mysql2
+  encoding: utf8
+  database: sonara2
+  username: root
+  password: j262
 
 #production:
 #  adapter: sqlite3
