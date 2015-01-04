@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sonara <%= current_user.name if current_user %></title>
-  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto Slab">-->
+  <title>Сонара <%= current_user.name if current_user %></title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
