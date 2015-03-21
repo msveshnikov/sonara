@@ -10,6 +10,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-vkontakte'
 gem 'thin'
+gem 'rails_admin'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
