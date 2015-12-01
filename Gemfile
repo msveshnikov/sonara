@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 4.2'
+gem 'rails', '4.0.2'
 gem 'newrelic_rpm'
 
 gem 'will_paginate'
@@ -11,7 +11,6 @@ gem 'bootstrap-will_paginate'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-vkontakte'
-gem 'thin'
 gem 'rails_admin'
 
 # Use sqlite3 as the database for Active Record
@@ -36,5 +35,6 @@ gem 'bcrypt'
 group :development do
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
+  gem 'thin'
 end
 
