@@ -1,7 +1,9 @@
 source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '>= 4.2'
+gem 'newrelic_rpm'
+
 gem 'will_paginate'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'russian', '~> 0.6.0'
